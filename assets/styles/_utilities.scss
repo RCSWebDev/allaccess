@@ -1,0 +1,21 @@
+//* Colors
+$black: #000;
+$gray:	#ccc;
+$white: #fff;
+$light:	#eee;
+
+//* Fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+$body:	'Oswald', Arial, Helvetica, sans-serif;
+
+//* Placeholders
+%body {
+	font-family: $body;
+	font-weight: 400;
+}
+
+%header {
+	font-family: $body;
+	font-weight: 700;
+	text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+.home {
+	.mediabase-chart-container {
+		@include padding(48px null);
+	}
+	
+	.chartmetric-container {
+		@extend .mediabase-chart-container;
+		background-color: $light;
+	}
+}

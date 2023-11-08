@@ -1,0 +1,17 @@
+.mediabase-chart-frame-container {
+	height: 0;
+	position: relative;
+	padding-bottom: 38.25%;
+	
+	iframe {
+		@include position(absolute, 0 null null 0);
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.chartmetric-frame-container {
+	@extend .mediabase-chart-frame-container;
+	margin-bottom: 48px;
+	padding-bottom: 61.25%;
+}

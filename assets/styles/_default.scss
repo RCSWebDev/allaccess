@@ -1,0 +1,26 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+//* ====== DEFAULT LAYOUT ============ *//
+.site-inner {
+	padding-top: 48px;
+	
+	.banner-ad {
+		img {
+			display: inline-block;
+		}
+	}	
+}
