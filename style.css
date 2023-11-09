@@ -237,6 +237,26 @@ ul .site-footer li {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.home .muzooka-container h1 {
+  font-size: 3.6rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+@media (min-width: 400px) {
+  .home .muzooka-container h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 576px) {
+  .home .muzooka-container h1 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .home .muzooka-container h1 {
+    font-size: 4.2rem;
+  }
+}
 .chartmetric .chartmetric-container {
   padding-top: 48px;
   padding-bottom: 48px;
