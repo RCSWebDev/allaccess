@@ -77,12 +77,12 @@ ul li a {
   text-decoration: none;
   transition: all 0.2s ease;
 }
-.mediabase-chart-frame-container, .chartmetric-frame-container {
+.frame-container, .instore-frame-container, .chartmetric-frame-container, .muzooka-frame-container {
   height: 0;
   position: relative;
   padding-bottom: 38.25%;
 }
-.mediabase-chart-frame-container iframe, .chartmetric-frame-container iframe {
+.frame-container iframe, .instore-frame-container iframe, .chartmetric-frame-container iframe, .muzooka-frame-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,9 +90,68 @@ ul li a {
   width: 100%;
 }
 
+.muzooka-frame-container {
+  padding-bottom: 940%;
+}
+@media (min-width: 400px) {
+  .muzooka-frame-container {
+    padding-bottom: 772%;
+  }
+}
+@media (min-width: 576px) {
+  .muzooka-frame-container {
+    padding-bottom: 734%;
+  }
+}
+@media (min-width: 768px) {
+  .muzooka-frame-container {
+    padding-bottom: 662%;
+  }
+}
+@media (min-width: 992px) {
+  .muzooka-frame-container {
+    padding-bottom: 688%;
+  }
+}
+@media (min-width: 1200px) {
+  .muzooka-frame-container {
+    padding-bottom: 312%;
+  }
+}
+@media (min-width: 1400px) {
+  .muzooka-frame-container {
+    padding-bottom: 298%;
+  }
+}
+
 .chartmetric-frame-container {
   margin-bottom: 48px;
-  padding-bottom: 61.25%;
+  padding-bottom: 300%;
+}
+@media (min-width: 576px) {
+  .chartmetric-frame-container {
+    padding-bottom: 130%;
+  }
+}
+@media (min-width: 768px) {
+  .chartmetric-frame-container {
+    padding-bottom: 94%;
+  }
+}
+@media (min-width: 992px) {
+  .chartmetric-frame-container {
+    padding-bottom: 108%;
+  }
+}
+@media (min-width: 1200px) {
+  .chartmetric-frame-container {
+    padding-bottom: 64%;
+  }
+}
+@media (min-width: 1400px) {
+  .chartmetric-frame-container {
+    padding-bottom: 55%;
+  }
 }
 
 .site-header {
@@ -132,12 +191,25 @@ ul .site-footer li {
   margin-bottom: 0;
 }
 
-.home .mediabase-chart-container, .home .chartmetric-container {
+.home {
+  /*
+  .mediabase-chart-container {
+  	@include padding(48px null);
+  }
+  */
+}
+.home .muzooka-container {
   padding-top: 48px;
   padding-bottom: 48px;
 }
-.home .chartmetric-container {
-  background-color: #eee;
+.chartmetric .chartmetric-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.instore .instore-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

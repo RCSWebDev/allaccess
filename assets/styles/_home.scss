@@ -1,10 +1,14 @@
 .home {
+	/*
 	.mediabase-chart-container {
 		@include padding(48px null);
 	}
+	*/
 	
-	.chartmetric-container {
-		@extend .mediabase-chart-container;
-		background-color: $light;
+	.muzooka-container {
+		@include padding(48px null);
+		// background-color: $light;
 	}
+	
+	#side-box-ad {}
 }
