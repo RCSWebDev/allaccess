@@ -27,18 +27,18 @@
 	}
 	
 	@include breakpoint(lg) {
-		// padding-bottom: 300%;
-		padding-bottom: 688%;
+		padding-bottom: 300%;
+		// padding-bottom: 688%;
 	}
 	
 	@include breakpoint(xl) {
-		// padding-bottom: 175%;
-		padding-bottom: 312%;
+		padding-bottom: 175%;
+		// padding-bottom: 312%;
 	}
 	
 	@include breakpoint(xxl) {
-		//padding-bottom: 158%;
-		padding-bottom: 298%;
+		padding-bottom: 158%;
+		// padding-bottom: 298%;
 	}
 }
 
@@ -71,4 +71,30 @@
 
 .instore-frame-container {
 	@extend .frame-container;
+	margin-bottom: 48px;
+	padding-bottom: 666%;
+	
+	@media(min-width:400px) {
+		padding-bottom: 435%;
+	}
+	
+	@include breakpoint(sm) {
+		padding-bottom: 342%;
+	}
+	
+	@include breakpoint(md) {
+		padding-bottom: 190%;
+	}
+	
+	@include breakpoint(lg) {
+		padding-bottom: 214%;
+	}
+	
+	@include breakpoint(xl) {
+		padding-bottom: 132%;
+	}
+	
+	@include breakpoint(xxl) {
+		padding-bottom: 114%;
+	}
 }
