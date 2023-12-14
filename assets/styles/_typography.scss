@@ -4,14 +4,39 @@ h3,
 h4,
 h5,
 h6 {
-	@extend %header;
-	@include margin(0 null 12px);
+	@extend %header700;
+	@include margin(0 null 28px);
+	text-transform: uppercase;
 	
 	a {
 		text-decoration: none;
 		transition: all .2s ease;
 		&:hover {}
 	}
+}
+
+h1 {
+	font-size: 4.2rem !important;
+}
+
+h2 {
+	font-size: 3.6rem !important;
+}
+
+h3 {
+	font-size: 3.2rem !important;
+}
+
+h4 {
+	font-size: 2.8rem !important;
+}
+
+h5 {
+	font-size: 2.4rem !important;
+}
+
+h6 {
+	font-size: 1.8rem !important;
 }
 
 p {
@@ -23,6 +48,13 @@ p {
 	a {
 		transition: all .2s ease;
 		&:hover {}
+		
+		&.btn {
+			@extend %header700;
+			font-size: 1.6rem;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
 	}
 }
 
@@ -34,7 +66,6 @@ ul {
 		
 		a {
 			text-decoration: none;
-			transition: all .2s ease;
 			&:hover {}
 		}
 	}
