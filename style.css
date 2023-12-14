@@ -5,8 +5,7 @@ ul li {
   font-weight: 400;
 }
 
-input[type=submit], label.form-label, p a.btn, ol li a.btn,
-ul li a.btn, h1,
+.downloads table tr td:first-of-type, input[type=submit], label.form-label, .btn, h1,
 h2,
 h3,
 h4,
@@ -16,7 +15,7 @@ h6 {
   font-weight: 700;
 }
 
-.nav-primary .menu-primary li {
+.downloads table .song-label, .nav-primary .menu-primary li {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -98,13 +97,6 @@ p a, ol li a,
 ul li a {
   transition: all 0.2s ease;
 }
-p a.btn, ol li a.btn,
-ul li a.btn {
-  font-size: 1.6rem;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
 ol li,
 ul li {
   margin-bottom: 8px;
@@ -113,6 +105,12 @@ ol li a,
 ul li a {
   text-decoration: none;
 }
+.btn {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
 label.form-label {
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -246,6 +244,20 @@ ul .site-footer li {
   color: #fff;
   font-size: 1.4rem;
   margin-bottom: 0;
+}
+
+.downloads table h4 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+.downloads table .song-label {
+  font-size: 1.6rem;
+}
+.downloads table .song-label .record-label {
+  font-style: italic;
+}
+.downloads table tr td:first-of-type {
+  font-size: 3.6rem;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

@@ -48,13 +48,6 @@ p {
 	a {
 		transition: all .2s ease;
 		&:hover {}
-		
-		&.btn {
-			@extend %header700;
-			font-size: 1.6rem;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
 	}
 }
 
@@ -69,4 +62,11 @@ ul {
 			&:hover {}
 		}
 	}
+}
+
+.btn {
+	@extend %header700;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
 }

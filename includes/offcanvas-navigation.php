@@ -13,16 +13,16 @@
 					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">All Access Downloads</a>
 					
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Alternative</a></li>
-						<li><a class="dropdown-item" href="#">Contemp. Christian</a></li>
-						<li><a class="dropdown-item" href="#">Country</a></li>
-						<li><a class="dropdown-item" href="#">Dance</a></li>
-						<li><a class="dropdown-item" href="#">Hot/Mod/AC</a></li>
-						<li><a class="dropdown-item" href="#">Rock</a></li>
-						<li><a class="dropdown-item" href="#">Top 40/M</a></li>
-						<li><a class="dropdown-item" href="#">Top 40/R</a></li>
-						<li><a class="dropdown-item" href="#">Triple A</a></li>
-						<li><a class="dropdown-item" href="#">Urban/R&amp;B</a></li>
+						<li><a class="dropdown-item" href="download.html">Alternative</a></li>
+						<li><a class="dropdown-item" href="download.html">Contemp. Christian</a></li>
+						<li><a class="dropdown-item" href="download.html">Country</a></li>
+						<li><a class="dropdown-item" href="download.html">Dance</a></li>
+						<li><a class="dropdown-item" href="download.html">Hot/Mod/AC</a></li>
+						<li><a class="dropdown-item" href="download.html">Rock</a></li>
+						<li><a class="dropdown-item" href="download.html">Top 40/M</a></li>
+						<li><a class="dropdown-item" href="download.html">Top 40/R</a></li>
+						<li><a class="dropdown-item" href="download.html">Triple A</a></li>
+						<li><a class="dropdown-item" href="download.html">Urban/R&amp;B</a></li>
 					</ul>
 				</li>
 				

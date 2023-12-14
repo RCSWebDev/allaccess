@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>All Access - Powered by Mediabase</title>
+	<title>All Access Downloads - Genre Chart</title>
 	<link type="text/css" rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css" />
 	<link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 
-<body class="login">
+<body class="downloads">
 	
 <header class="site-header">
 	<div class="container">
@@ -107,42 +107,74 @@
 			<div class="row">
 				<div class="col-12">
 					<header class="entry-header">
-						<h1 class="entry-title text-center">Members Log-In</h1>
+						<h1 class="entry-title text-center">All Access Downloads</h1>
+						<h2 class="sub-entry-title text-center">Genre Chart</h2>
 					</header>
 				</div>
 			</div>
 		</div>
 		
-		<!-- login form -->
-		<div class="login-form">
+		<!-- download section -->
+		<div class="download-genre">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-6 offset-md-3">
+					<div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
 						
-						<form class="form form-login">
-							<div class="col-12">
-								<label class="form-label" for="username">Username</label>
-								<input type="text" name="username" class="form-control" id="username" required />
-							</div>
-							
-							<div class="col-12">
-								<label class="form-label" for="password">Password</label>
-								<input type="password" name="password" class="form-control" id="password" required />
-							</div>
-							
-							<div class="col-12">
-								<div class="form-check">
-									<input type="checkbox" name="remember-me" class="form-check-input" id="remember-me" />
-									<label class="form-check-label" for="remember-me">Remember Me</label>
+						<!-- tab menu -->
+						<ul class="nav" id="genre-content-menu">
+							<button type="button" class="btn btn-light nav-link active" data-bs-toggle="tab" data-bs-target="#tab-top-downloads">Top Downloads</button>
+						
+							<button type="button" class="btn btn-light nav-link" data-bs-toggle="tab" data-bs-target="#tab-top-streams">Top Streams</button>
+						
+							<button type="button" class="btn btn-light nav-link" data-bs-toggle="tab" data-bs-target="#tab-recent-downloads">Most Recent Downloads</button>
+						</ul>
+						
+						<!-- tab content -->
+						<div class="tab-content" id="genre-content">
+							<div class="tab-pane fade show active" id="tab-top-downloads">
+								<div class="table-responsive">
+									<table class="table">
+										<tbody>
+											<tr class="row">
+												<!-- rank -->
+												<td class="col-1 align-middle">1</td>
+												
+												<!-- song -->
+												<td class="col-8">
+													<div class="row">
+														<div class="col-12 col-md-3">
+															<img class="img-fluid img-thumbnail" src="https://picsum.photos/id/64/100/100" alt="" />
+														</div>
+														
+														<div class="col-12 col-md-9">
+															<h4>Thirty Seconds to Mars</h4>
+															<p class="song-label" />Seasons (Radio Edit)
+																<span class="record-label">(Concord Records/Concord)</span>
+															
+															<p /><small>You have not yet downloaded this song. Click here to download now.</small>
+														</div>
+													</div>
+												</td>
+												
+												<!-- buttons -->
+												<td class="col-3">
+													<ul class="list-inline text-end">
+														<li class="list-inline-item"><i class="fa-solid fa-download fa-3x"></i></li>
+														<li class="list-inline-item"><i class="fa-solid fa-download fa-3x"></i></li>
+														<li class="list-inline-item"><i class="fa-solid fa-download fa-3x"></i></li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-							</div>
+							</div><!-- [/END] #tab-top-downloads -->
 							
-							<input type="submit" class="btn btn-primary" value="Log In"></input>
-						</form>
-						
-						<div class="alert alert-primary text-center">
-							<h5>Not a Member Yet?</h5>
-							<p /><a class="btn btn-primary" href="register.html">Sign Up Now</a>
+							<div class="tab-pane fade" id="tab-top-streams">
+							</div><!-- [/END] #tab-top-streams -->
+							
+							<div class="tab-pane fade" id="tab-recent-downloads">
+							</div><!-- [/END] #tab-recent-downloads -->
 						</div>
 						
 					</div>
