@@ -15,7 +15,7 @@ h6 {
   font-weight: 700;
 }
 
-.downloads table .song-label, .nav-primary .menu-primary li {
+.nav-primary .menu-primary li {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -247,17 +247,58 @@ ul .site-footer li {
 }
 
 .downloads table h4 {
-  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+.downloads table p, .downloads table ol li, ol .downloads table li,
+.downloads table ul li,
+ul .downloads table li {
+  line-height: 100%;
   margin-bottom: 0;
 }
-.downloads table .song-label {
+.downloads table p.song-label, .downloads table ol li.song-label, ol .downloads table li.song-label,
+.downloads table ul li.song-label,
+ul .downloads table li.song-label {
   font-size: 1.6rem;
+  margin-bottom: 12px;
 }
-.downloads table .song-label .record-label {
+.downloads table p.song-label .record-label, .downloads table ol li.song-label .record-label, ol .downloads table li.song-label .record-label,
+.downloads table ul li.song-label .record-label,
+ul .downloads table li.song-label .record-label {
+  font-size: 1.4rem;
   font-style: italic;
+}
+.downloads table tr td {
+  display: block;
+}
+@media (min-width: 768px) {
+  .downloads table tr td {
+    display: table-cell;
+  }
 }
 .downloads table tr td:first-of-type {
   font-size: 3.6rem;
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .downloads table tr td:first-of-type {
+    border-bottom: 1px solid #dee2e6;
+    width: 8.333%;
+  }
+}
+.downloads table tr td:nth-of-type(2) {
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .downloads table tr td:nth-of-type(2) {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+.downloads #offcanvas-music-download h4 {
+  font-size: 2.4rem !important;
+  margin-top: 18px;
+}
+.downloads #offcanvas-music-download table tr td {
+  border-bottom: 1px solid #dee2e6;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
