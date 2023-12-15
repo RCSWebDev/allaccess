@@ -37,8 +37,8 @@
 							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Mediabase</a>
 							
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Song Charts</a></li>
-								<li><a class="dropdown-item" href="#">Airplay Add Board</a></li>
+								<li><a class="dropdown-item" href="mediabase.html">Song Charts</a></li>
+								<li><a class="dropdown-item" href="mediabase.html">Airplay Add Board</a></li>
 							</ul>
 						</li>
 						
