@@ -50,14 +50,27 @@
       }
 
       p,
-      .table td {
+      table td {
         font-family: "Oswald", Arial, Helvetica, sans-serif;
         font-size: 16px;
       }
 
-      .table th {
+      table th {
         font-family: "Oswald", Arial, Helvetica, sans-serif;
         font-size: 14px;
+      }
+
+      .artist-img img {
+        float: left;
+        width: 40px;
+        height: auto;
+        /* border-radius: 50%; */
+      }
+      .artist-img p {
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -84,9 +97,8 @@
     </header>
     <body>
       <div id="wrapper"></div>
-
-      <script type="module" src="chartmetric.js"></script>
-    </body>
+    </body>>
+    <footer>
     <script>
       $(document).ready(function () {
         var $browser = $(window).width();
@@ -97,5 +109,5 @@
       });
     </script>
     <script type="module" src="chartmetric.js"></script>
-  </body>
+    </footer>>
 </html>

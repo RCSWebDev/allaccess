@@ -1,5 +1,5 @@
 import { Grid, html } from "https://unpkg.com/gridjs?module";
-import chartData from "/charts/aa.json" assert { type: "json" };
+import chartData from "/charts/chartmetric.json" assert { type: "json" };
 
 //console.log(chartData);
 const data = chartData.obj.obj.map((artist) => ({
@@ -22,7 +22,7 @@ const columns = [
   {
     formatter: (_, row) =>
       html(
-        `<img src=${row.cells[2].data} style="width:50px;height:60px;"><span>${row.cells[1].data}</span>`
+        `<span class="artist-img"><img src=${row.cells[2].data}><p>${row.cells[1].data}</p><span>`
       ),
     name: "Artist",
   },
@@ -35,11 +35,12 @@ const columns = [
 const grid = new Grid({
   columns,
   data,
-  pagination: {
-    limit: 50,
-    summary: false,
-  },
+  // pagination: {
+  //   limit: 50,
+  //   summary: false,
+  // },
   fixedHeader: true,
+  height: "674px",
   style: {
     table: {
       "font-size": "11px",
