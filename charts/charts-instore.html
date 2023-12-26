@@ -1,239 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>What's In-Store Music Charts</title>
-	
-	<link rel="stylesheet" type="text/css" href="../assets/styles/vendor/bootstrap.min.css" />
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-	
-	<style type="text/css">
-		img {
-			display: block;
-			height: auto;
-			max-width: 100%;
-		}
-		
-		.title-area {
-			margin-top: 18px;
-			margin-bottom: 18px;
-		}
-		
-		.logo-img {
-			height: 262px;
-			margin-right: 18px;
-			margin-bottom: 18px;
-			width: 320px;
-		}
-		
-		h2,
-		h5,
-		h6 {
-			font-family: 'Oswald', Arial, Helvetica, sans-serif;
-			font-weight: 700;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-		
-		h2 {
-			font-size: 24px;
-		}
-		
-		h5 {
-			font-size: 18px;
-		}
-		
-		h6 {
-			font-size: 14px;
-		}
-		
-		p,
-		.table td {
-			font-family: 'Oswald', Arial, Helvetica, sans-serif;
-			font-size: 16px;
-		}
-		
-		.table th {
-			font-family: 'Oswald', Arial, Helvetica, sans-serif;
-			font-size: 14px;
-			text-transform: uppercase;
-		}
-	</style>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chartmetric Artist Chart</title>
+    <script type="module">
+      import { Grid, html } from "https://unpkg.com/gridjs?module";
+    </script>
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+	  rel="stylesheet"
+	  type="text/css"
+	  href="../assets/styles/vendor/bootstrap.min.css"
+	/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="charts chartmetric-charts">
+    <style type="text/css">
+      img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
 
-<header class="chart-header">
-	<div class="row">
-		<div class="col-12">
-			<div class="logo-select">
-				<img class="logo-img" src="../assets/images/logo-instore.png" alt="What's In-Store Music" title="What's In-Store Music" />
-				
-				<div class="chart-selection">
-					<h6>Select Chart</h6>
-					<form name="instore-chart-selection" id="instore-chart-selection">
-						<select>
-							<option>What's In-Store Music Currents</option>
-							<option>What's In-Store Music: The Dance Environment</option>
-							<option>What's In-Store Music: Holiday 2022</option>
-						</select>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-12">
-			<div class="title-area">
-				<h2>What's In-Store Music Currents</h2>
-				<p /><small>From 10/27/2023 to 11/3/2023</small>
-			</div>
-		</div>
-	</div>
-</header>
+      .title-area {
+        margin-bottom: 18px;
+      }
 
-<table class="table table-hover table-bordered">
-	<thead>
-		<tr>
-			<th>Rank</th>
-			<th>Artist/Title</th>
-			<th>Spins LW</th>
-			<th>Spins TW</th>
-			<th>Locations</th>
-			<th>Impressions</th>
-		</tr>
-	</thead>
-	
-	<tbody class="table-group-divider">
-		<tr>
-			<td>1</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>9</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-		<tr>
-			<td>10</td>
-			<td>
-				<h5>BRUNO MARS/ANDERSON .PAAK/SILK SONIC</h5>
-				<span class="song-title">Last Night Was Good For My Soul</span>
-			</td>
-			<td>42,498</td>
-			<td>42,514</td>
-			<td>17,966</td>
-			<td>1,050,096</td>
-		</tr>
-	</tbody>
-</table>
+      .logo-img {
+        height: 65px;
+        margin-right: 18px;
+        width: 66px;
+      }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      h3 {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: uppercase;
+      }
 
-<script>
-	$(document).ready(function() {
-		var $browser = $(window).width();
-		if($browser >= 768) {
-			$('.logo-select').addClass('d-inline-flex align-items-center');
-			// $('.chart-header .row').addClass('align-items-end');
-		}
-	});
-</script>
+      p,
+      table td {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
 
-</body>
+      table th {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .artist-img img {
+        float: left;
+        width: 40px;
+        height: auto;
+        /* border-radius: 50%; */
+      }
+      .artist-img p {
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body class="charts chartmetric-charts">
+    <header class="chart-header">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-area d-flex align-items-center">
+            <div class="genre-date">
+              <h3>Whats In Store Music</h3>
+              <!-- p />Click on any artist below to get detailed Chartmetric artist information. -->
+			  <img src="../assets/images/logo-instore.png">
+            </div>
+			<select class="form-select" aria-label="Default select example">
+			  <option selected>Open this select menu</option>
+			  <option value="1">One</option>
+			  <option value="2">Two</option>
+			  <option value="3">Three</option>
+			</select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <body>
+      <div id="instore-currents"></div>
+
+    <script>
+      $(document).ready(function () {
+        var $browser = $(window).width();
+        if ($browser >= 768) {
+          $(".title-area").addClass("d-inline-flex");
+          $(".chart-header .row").addClass("align-items-end");
+        }
+      });
+    </script>
+	  <script type="module" src="instore-currents.js"></script>
+  </body>
 </html>
