@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Upload a Chart XL file and Convert to JSON</title>
+	<title>Upload Excel and Convert to JSON</title>
 </head>
 <body>
 	<h2>Upload an Excel file and convert to JSON</h2>
@@ -22,11 +22,20 @@
 		// Get the first worksheet
 		$sheet = $spreadsheet->getSheet(0);
 
-		// Check if the first row contains "Current Chart"
+		// Check if the first row contains "Current Chart" or "dance"
 		$firstRowValue = $sheet->getCell('A1')->getValue();
-		$startRow = ($firstRowValue == "Current Chart") ? 2 : 1;
+		$startRow = 1;
+		$json_file_name = 'excel_data.json';  // Default file name
 
-		// Extract specific columns
+		if (stripos($firstRowValue, 'current chart') !== false) {
+			$startRow = 2;
+			$json_file_name = 'currents.json';
+		} elseif (stripos($firstRowValue, 'dance') !== false) {
+			$startRow = 2;
+			$json_file_name = 'dance.json';
+		}
+
+		// Extract specific columns and round Impressions to the nearest whole number
 		$data = [];
 		$columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // Columns for Rank, Title, Artist, Spins Last Range, Spins This Range, Locations, and Impressions
 		$rowIterator = $sheet->getRowIterator($startRow);
@@ -34,20 +43,21 @@
 			$rowData = [];
 			foreach ($columns as $column) {
 				$cellValue = $sheet->getCell($column . $rowIterator->current()->getRowIndex())->getValue();
+				// Round the 'Impressions' column to the nearest whole number
+				if ($column === 'G' && is_numeric($cellValue)) {
+					$cellValue = round($cellValue);
+				}
 				$rowData[] = $cellValue;
 			}
 			$data[] = $rowData;
 			$rowIterator->next();
 		}
 
-		// Convert the array to a JSON string
+		// Convert the array to a JSON string and save the JSON to a file
 		$json = json_encode($data);
-
-		// Determine the JSON file name and save the JSON to a file
-		$json_file_name = ($firstRowValue == "Current Chart") ? 'currents.json' : 'excel_data.json';
 		file_put_contents($json_file_name, $json);
 
-		echo "Excel file has been successfully converted to JSON. <a href='$json_file_name' download>Download JSON</a>";
+		echo "Excel file has been successfully converted to JSON. <a href='$json_file_name' download>Download $json_file_name</a>";
 	}
 	?>
 
