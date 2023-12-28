@@ -1,6 +1,6 @@
 import { Grid, html } from "https://unpkg.com/gridjs?module";
 
-fetch("/charts/currents.json")
+fetch("/charts/dance.json")
   .then((response) => response.json())
   .then((fetchedData) => {
     const data = fetchedData.map((item, index) => {
@@ -60,5 +60,5 @@ fetch("/charts/currents.json")
     });
 
     // Render the grid
-    grid.render(document.getElementById("instore-currents"));
+    grid.render(document.getElementById("instore-dance"));
   });
