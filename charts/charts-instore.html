@@ -101,19 +101,27 @@
     <script type="module" src="instore-dance.js"></script>
     <script>
       $(document).ready(function () {
+        var selectedValue = $("#wism-select").val(); // Store the initial selected value
+
         function updateDisplay() {
-          var selectedValue = $("#wism-select").val();
-          $(".chart-area").addClass("hidden"); // first hide all
-          $("#" + selectedValue).removeClass("hidden"); // then show selected
+          selectedValue = $("#wism-select").val(); // Update the selected value
+          $(".chart-area").addClass("hidden"); // First hide all
+          $("#" + selectedValue).removeClass("hidden"); // Then show selected
         }
 
         // Update display based on initial selected value
         updateDisplay();
 
-        // Update display whenever the selection changes
-        // Update display whenever the selection changes
+        // Update display and reload the iframe content whenever the selection changes
         $("#wism-select").on("change", function () {
           updateDisplay();
+          var iframe = document.getElementById("instore-frame"); // Replace "your-iframe-id" with the actual ID of the iframe element
+          iframe.contentWindow.location.reload(); // Reload only the iframe content
+        });
+
+        // Set the selected value back after the iframe reloads
+        $("instore-frame").on("load", function () {
+          $("#wism-select").val(selectedValue);
         });
       });
     </script>
