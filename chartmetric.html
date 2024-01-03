@@ -1,166 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>All Access - Powered by Mediabase</title>
-	<link rel="stylesheet" type="text/css" href="assets/styles/vendor/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Access - Powered by Mediabase</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/styles/vendor/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body class="charts chartmetric">
-	
-<header class="site-header">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-12 col-lg-4">
-				<div class="title-area d-flex flex-row align-items-center">
-					<button type="button" class="btn btn-light toggle-mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#nav-primary"><i class="fa-solid fa-bars fa-2x"></i></button>
-					
-					<a href="/allaccess/">
-						<img src="assets/images/logo-allaccess-red.png" alt="All Access - Powered by Mediabase" title="All Access - Powered by Mediabase" style="max-width: 275px;" />
-					</a>
-				</div>
-			</div>
-			
-			<div class="col col-lg-8">
-				<nav id="nav-primary" class="nav-primary">
-					<div class="offcanvas-header">
-						<img src="assets/images/logo-allaccess-red.png" alt="All Access - Powered by Mediabase" title="All Access - Powered by Mediabase" style="width: 75%;" />
-						
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
+  <body class="charts chartmetric">
+    <header class="site-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center">
+            <div class="mobile-menu-btn">
+              <button
+                type="button"
+                class="btn btn-light mobile-menu-toggle"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-navigation"
+              >
+                <i class="fa-solid fa-bars fa-2x"></i>
+              </button>
+            </div>
 
-					<ul id="navigation-primary" class="nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">All Access Downloads</a>
-							
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Alternative</a></li>
-								<li><a class="dropdown-item" href="#">Contemp. Christian</a></li>
-								<li><a class="dropdown-item" href="#">Country</a></li>
-								<li><a class="dropdown-item" href="#">Dance</a></li>
-								<li><a class="dropdown-item" href="#">Hot/Mod/AC</a></li>
-								<li><a class="dropdown-item" href="#">Rock</a></li>
-								<li><a class="dropdown-item" href="#">Top 40/M</a></li>
-								<li><a class="dropdown-item" href="#">Top 40/R</a></li>
-								<li><a class="dropdown-item" href="#">Triple A</a></li>
-								<li><a class="dropdown-item" href="#">Urban/R&amp;B</a></li>
-							</ul>
-						</li>
-						
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Mediabase</a>
-							
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Song Charts</a></li>
-								<li><a class="dropdown-item" href="#">Airplay Add Board</a></li>
-							</ul>
-						</li>
-						
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">More Charts</a>
-							
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item active" href="chartmetric.html">Chartmetric</a></li>
-								<li><a class="dropdown-item" href="instore-music.html">What's In-Store Music</a></li>
-							</ul>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#">Client Log-In</a>
-						</li>
-					</ul>
-					
-					<ul id="navigation-social" class="nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-</header>
+            <div class="title-area">
+              <h1 class="site-title">
+                <a href="/allaccess">
+                  <img
+                    src="assets/images/logo-allaccess-red.png"
+                    alt="All Access - Powered by Mediabase"
+                    title="All Access - Powered by Mediabase"
+                  />
+                </a>
+              </h1>
+            </div>
 
-<div class="site-inner">
-	<div class="banner-ad">
-		<div class="container text-center">
-			<div class="row justify-content-center">
-				<div class="col align-self-center">
-					<img src="assets/images/TrueIntegration_728x90_2.png" width="728" height="90" />
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="chartmetric-container">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-8 col-xl-9">
-					<div class="chartmetric-frame-container">
-						<iframe name="chartmetric-frame" id="chartmetric-frame" src="charts/charts-chartmetric.html"></iframe>
-					</div>
-					
-					<div class="callout callout-info">
-						<img src="assets/images/logo-chartmetric.png" alt="Chartmetric" title="Chartmetric" />
-						<br /><br/>
-					
-						<h5>Explanation for Chartmetric Score and Ranks</h5>
-						
-						<p />Chartmetric Score: uses over 50 data points from multiple streaming services and social networks. An artist’s score is updated on a daily basis to reflect the current exposure for each artist and their content, plus the level of engagement with audiences. Unlike traditional metrics that are used to measure and rank artists, the Chartmetric Score reflects how today’s audiences consume music and how they share content with friends all over the world.
-						
-						<p />Engagement Rank and Fan Base Rank: Subsets of the Chartmetric Score are also used to determine an artist's Engagement Rank and Fanbase Rank. The Engagement Rank is describes current active engagement by audiences, whereas the Fanbase Rank utilizes metrics related to the size and growth of the audience.
-					</div>
-				</div>
-				
-				<div id="side-box-ad" class="col-12 col-lg-4 col-xl-3">
-					<img src="assets/images/TrueIntegration300x250_2.png" width="300" height="250" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+            <nav class="nav-header nav-primary">
+              <ul class="nav justify-content-end menu-primary">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >All Access Downloads</a
+                  >
 
-<footer class="site-footer">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-12 col-lg-6">
-				<p />&copy; 2023 Mediabase
-			</div>
-			
-			<div class="col-12 col-lg-6">
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-					</li>
-					
-					<li class="nav-item">
-						<a class="nav-link" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-					</li>
-					
-					<li class="nav-item">
-						<a class="nav-link" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="download.html"
+                        >Alternative</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html"
+                        >Contemp. Christian</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html">Country</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html">Dance</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html"
+                        >Hot/Mod/AC</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html">Rock</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html">Top 40/M</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html">Top 40/R</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html">Triple A</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="download.html"
+                        >Urban/R&amp;B</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >Mediabase</a
+                  >
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="assets/scripts/min/fontawesome.min.js"></script>
-<script src="assets/scripts/min/bootstrap.bundle.min.js"></script>
-<script src="assets/scripts/min/global.js"></script>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="mediabase.html"
+                        >Song Charts</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="mediabase.html"
+                        >Airplay Add Board</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-</body>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >More Charts</a
+                  >
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/chartmetric.html"
+                        >Chartmetric</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/instore-music.html"
+                        >What's In-Store Music</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Client Log-In</a>
+                </li>
+              </ul>
+
+              <ul class="nav justify-content-end menu-socials">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="site-inner">
+      <div class="banner-ad">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col align-self-center">
+              <img
+                src="assets/images/TrueIntegration_728x90_2.png"
+                width="728"
+                height="90"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chartmetric-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="chartmetric-frame-container">
+                <iframe
+                  name="chartmetric-frame"
+                  id="chartmetric-frame"
+                  src="charts/charts-chartmetric.html"
+                ></iframe>
+              </div>
+
+              <div class="callout callout-info">
+                <img
+                  src="assets/images/logo-chartmetric.png"
+                  alt="Chartmetric"
+                  title="Chartmetric"
+                />
+                <br /><br />
+
+                <h5>Explanation for Chartmetric Score and Ranks</h5>
+
+                <p />
+                Chartmetric Score: uses over 50 data points from multiple
+                streaming services and social networks. An artist’s score is
+                updated on a daily basis to reflect the current exposure for
+                each artist and their content, plus the level of engagement with
+                audiences. Unlike traditional metrics that are used to measure
+                and rank artists, the Chartmetric Score reflects how today’s
+                audiences consume music and how they share content with friends
+                all over the world.
+
+                <p />
+                Engagement Rank and Fan Base Rank: Subsets of the Chartmetric
+                Score are also used to determine an artist's Engagement Rank and
+                Fanbase Rank. The Engagement Rank is describes current active
+                engagement by audiences, whereas the Fanbase Rank utilizes
+                metrics related to the size and growth of the audience.
+              </div>
+            </div>
+
+            <div id="side-box-ad" class="col-12 col-lg-4 col-xl-3">
+              <img
+                src="assets/images/TrueIntegration300x250_2.png"
+                width="300"
+                height="250"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <p />
+            &copy; 2023 Mediabase
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/scripts/min/fontawesome.min.js"></script>
+    <script src="assets/scripts/min/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/min/global.js"></script>
+  </body>
 </html>
