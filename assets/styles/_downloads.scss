@@ -1,0 +1,70 @@
+.downloads {
+	table {
+		h4{
+			// font-size: 2.4rem;
+			margin-bottom: 18px;
+		}
+		
+		p {
+			line-height: 100%;
+			margin-bottom: 0;
+			
+			small {}
+			
+			&.song-label {
+				// @extend %header400;
+				font-size: 1.6rem;
+				margin-bottom: 12px;
+				
+				.record-label {
+					font-size: 1.4rem;
+					font-style: italic;
+				}
+			}
+		}
+		
+		tr {
+			td {
+				display: block;
+				
+				@include breakpoint(md) {
+					display: table-cell;
+				}
+				
+				&:first-of-type {
+					@extend %header700;
+					font-size: 3.6rem;
+					border-bottom: none;
+					
+					@include breakpoint(md) {
+						border-bottom: 1px solid #dee2e6;
+						width: 8.333%;
+					}
+				}
+				
+				&:nth-of-type(2) {
+					border-bottom: none;
+					
+					@include breakpoint(md) {
+						border-bottom: 1px solid #dee2e6;
+					}
+				}
+			}
+		}
+	}
+
+	#offcanvas-music-download {
+		h4 {
+			font-size: 2.4rem !important;
+			margin-top: 18px;
+		}
+		
+		table {
+			tr {
+				td {
+					border-bottom: 1px solid #dee2e6;
+				}
+			}
+		}
+	}
+}

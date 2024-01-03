@@ -1,0 +1,72 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend %header700;
+	@include margin(0 null 28px);
+	text-transform: uppercase;
+	
+	a {
+		text-decoration: none;
+		transition: all .2s ease;
+		&:hover {}
+	}
+}
+
+h1 {
+	font-size: 4.2rem !important;
+}
+
+h2 {
+	font-size: 3.6rem !important;
+}
+
+h3 {
+	font-size: 3.2rem !important;
+}
+
+h4 {
+	font-size: 2.8rem !important;
+}
+
+h5 {
+	font-size: 2.4rem !important;
+}
+
+h6 {
+	font-size: 1.8rem !important;
+}
+
+p {
+	@extend %body;
+	@include margin(0 null 28px);
+	font-size: 1.6rem;
+	line-height: 170%;
+	
+	a {
+		transition: all .2s ease;
+		&:hover {}
+	}
+}
+
+ol,
+ul {
+	li {
+		@extend p;
+		margin-bottom: 8px;
+		
+		a {
+			text-decoration: none;
+			&:hover {}
+		}
+	}
+}
+
+.btn {
+	@extend %header700;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}

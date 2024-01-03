@@ -1,0 +1,49 @@
+label {
+	&.form-label {
+		@extend %header700;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+	}
+	
+	&.form-check-label {
+		@extend %body;
+		font-size: 1.6rem;
+	}
+}
+
+input {
+	&.form-control {
+		@extend %body;
+		font-size: 1.6rem;
+	}
+	
+	&[type="submit"] {
+		@extend %header700;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+}
+
+select {
+	@extend %body;
+	font-size: 1.6rem !important;
+	
+	option {
+		@extend %body;
+		font-size: 1.6rem;
+	}
+}
+
+.form-login {
+	margin-bottom: 28px;
+	
+	div {
+		margin-bottom: 24px;
+	}
+}
+
+.form-register {
+	div {
+		margin-bottom: 24px;
+	}
+}
