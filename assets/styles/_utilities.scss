@@ -1,20 +1,12 @@
 //* Colors
 $black: #000;
-$red:		#e5412c;
+$gray:	#ccc;
 $white: #fff;
 $light:	#eee;
 
 //* Fonts
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap');
-$body:		'Roboto', Helvetia, Arial, sans-serif;
-$header:	'Oswald', Arial, Helvetica, sans-serif;
-
-//* Mixins
-@mixin flex($justify) {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: $justify;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+$body:	'Oswald', Arial, Helvetica, sans-serif;
 
 //* Placeholders
 %body {
@@ -22,12 +14,8 @@ $header:	'Oswald', Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
 
-%header700 {
-	font-family: $header;
+%header {
+	font-family: $body;
 	font-weight: 700;
-}
-
-%header400 {
-	font-family: $header;
-	font-weight: 400;
+	text-transform: uppercase;
 }

@@ -1,17 +1,25 @@
 .site-header {
-	@include padding(18px null);
+	// @include padding(18px null);
+	@include padding(8px null);
 	background-color: $light;
 	
-	.mobile-menu-btn {
+	.toggle-mobile-menu {
 		@include breakpoint(lg) {
 			display: none;
 		}
 	}
 	
-	.title-area {
-		.site-title {
-			@include margin(0 null);
-			max-width: 270px;
+	.offcanvas-header {
+		@include breakpoint(lg) {
+			display: none;
+		}
+	}
+	
+	.nav-item {
+		text-transform: uppercase;
+		
+		@include breakpoint(lg) {
+			margin-bottom: 0;
 		}
 	}
 }

@@ -14,11 +14,13 @@ img {
 	max-width: 100%;
 }
 
-//* Default Layout
+//* ====== DEFAULT LAYOUT ============ *//
 .site-inner {
-	padding-top: 24px;
+	padding-top: 48px;
 	
-	.content {
-		margin-bottom: 48px;
-	}
+	.banner-ad {
+		img {
+			display: inline-block;
+		}
+	}	
 }
