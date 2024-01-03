@@ -1,6 +1,6 @@
 import { Grid, html } from "https://unpkg.com/gridjs?module";
 const fetchData = async () => {
-  const response = await fetch("/charts/chartmetric.json");
+  const response = await fetch("chartmetric.json");
   const chartData = await response.json();
 
   const data = chartData.obj.obj.map((artist) => ({

@@ -1,6 +1,6 @@
 import { Grid, html } from "https://unpkg.com/gridjs?module";
 
-fetch("/charts/currents.json")
+fetch("currents.json")
   .then((response) => response.json())
   .then((fetchedData) => {
     const data = fetchedData.map((item, index) => {
