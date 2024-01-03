@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chartmetric Artist Chart</title>
+    <script type="module" src="https://unpkg.com/gridjs?module"></script>
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .title-area {
+        margin-bottom: 18px;
+      }
+
+      .logo-img {
+        height: 65px;
+        margin-right: 18px;
+        width: 66px;
+      }
+
+      h3 {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: uppercase;
+      }
+
+      p,
+      table td {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      table th {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .artist-img img {
+        float: left;
+        width: 40px;
+        height: auto;
+      }
+      .artist-img p {
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body class="charts chartmetric-charts">
+    <header class="chart-header">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-area d-flex align-items-center">
+            <img
+              class="logo-img"
+              src="../assets/images/logo-chartmetric-sm.png"
+              alt="Chartmetric"
+              title="Chartmetric"
+            />
+
+            <div class="genre-date">
+              <h3>Chartmetric Top 100 Artists</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper"></div>
+
+    <script>
+      $(document).ready(function () {
+        var $browser = $(window).width();
+        if ($browser >= 768) {
+          $(".title-area").addClass("d-inline-flex");
+          $(".chart-header .row").addClass("align-items-end");
+        }
+      });
+    </script>
+    <script type="module" src="chartmetric.js"></script>
+  </body>
+</html>

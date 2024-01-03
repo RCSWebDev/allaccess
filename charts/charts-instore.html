@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whats In Store Music</title>
+    <script type="module">
+      import { Grid, html } from "https://unpkg.com/gridjs?module";
+    </script>
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <script src="../assets/scripts/min/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/styles/vendor/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+      img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .title-area {
+        margin-bottom: 18px;
+      }
+
+      .logo-img {
+        height: 65px;
+        margin-right: 18px;
+        width: 66px;
+      }
+
+      h3 {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: uppercase;
+      }
+
+      p,
+      table td {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      table th {
+        font-family: "Oswald", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body class="charts instore-charts">
+    <header class="chart-header">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-area d-flex flex-row">
+            <div class="genre-date flex-column">
+              <h3>Whats In Store Music</h3>
+              <!-- p />Click on any artist below to get detailed Chartmetric artist information. -->
+              <img src="../assets/images/logo-instore.png" />
+            </div>
+            <div class="flex-column">
+              <select
+                id="wism-select"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option value="instore-currents" selected>
+                  What's In-Store Music Currents
+                </option>
+                <option value="instore-dance">
+                  What's In-Store Music - The Dance Environment
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="chart-area" id="instore-currents"></div>
+    <div class="chart-area" id="instore-dance"></div>
+
+    <script type="module" src="instore-currents.js"></script>
+    <script type="module" src="instore-dance.js"></script>
+    <script>
+      $(document).ready(function () {
+        var selectedValue = $("#wism-select").val(); // Store the initial selected value
+
+        function updateDisplay() {
+          selectedValue = $("#wism-select").val(); // Update the selected value
+          $(".chart-area").addClass("hidden"); // First hide all
+          $("#" + selectedValue).removeClass("hidden"); // Then show selected
+        }
+
+        // Update display based on initial selected value
+        updateDisplay();
+
+        // Update display and reload the iframe content whenever the selection changes
+        $("#wism-select").on("change", function () {
+          updateDisplay();
+          var iframe = document.getElementById("instore-frame"); // Replace "your-iframe-id" with the actual ID of the iframe element
+          iframe.contentWindow.location.reload(); // Reload only the iframe content
+        });
+
+        // Set the selected value back after the iframe reloads
+        $("instore-frame").on("load", function () {
+          $("#wism-select").val(selectedValue);
+        });
+      });
+    </script>
+  </body>
+</html>
