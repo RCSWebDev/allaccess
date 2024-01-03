@@ -1,2 +1,0 @@
-$(document).ready(function(){var e=$(window).width();e<768&&($(".site-footer p").addClass("text-center"),$(".site-footer .menu-socials").addClass("justify-content-center")),768<=e&&($(".site-footer .row").addClass("align-items-center"),$(".site-footer .menu-socials").addClass("justify-content-end")),992<=e&&($(".site-header .col-12").addClass("justify-content-between"),$(".site-header .nav-header").addClass("d-flex justify-content-end"))});
-//# sourceMappingURL=global.js.map
